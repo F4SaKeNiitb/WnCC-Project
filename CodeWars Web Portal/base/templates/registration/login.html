@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Login</h3>
+<form method="POST">
+ {% csrf_token %}
+ {{form}}
+ <button type="submit">Submit</button>
+</form>
+<a class="signup-link" href="{% url "base:authView" %}">SignUp</a>
+{% endblock content %}a

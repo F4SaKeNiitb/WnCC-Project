@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>SignUp</h3>
+<form method="POST">
+ {% csrf_token %}
+ {{form}}
+ <button type="submit">Submit</button>
+</form>
+<a class="signup-link" href="{% url "base:login" %}">Login</a>
+{% endblock content %}a

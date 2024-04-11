@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CodeWars</title>
+ {% load static %}
+ <link rel="icon" href="{% static "css/Logo.png" %}" type="image/x-icon"/>
+ <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+  <div class="outer-wrap">
+    <div class="inner-wrap">
+      <img src="{% static "css/Logo.png" %}" height="100px" width="400px">
+      <br><br>
+      {% block content %}{% endblock content %}
+    </div>
+    </div>
+</body>
+</html>

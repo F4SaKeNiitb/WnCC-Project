@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <h1>Welcome to CodeWars Live Testing Portal !!</h1><br>
+    <p>Collaborate with your team and test your coding skills in real-time challenges.<br>Upload your script and compete with other contenders of codewars to know where your team stands.</p><br><p>Go to dashboard to upload your script</p>
+    <nav class="navbar">
+        <ul>
+            <li><a class="form-wrap" href="/dashboard">Dashboard</a></li>
+            <li><a class="form-wrap" href="{% url "base:logout" %}">Logout</a></li>
+        </ul>
+    </nav>
+  </section>
+{% endblock content %}

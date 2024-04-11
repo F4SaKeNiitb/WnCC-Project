@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="center">
+    <nav class="navbar">
+        <ul>
+            <li><a class="form-wrap" href="{% url "base:home" %}">Home</a></li>
+            <li><a class="form-wrap" href="{% url "base:logout" %}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <br><br>
+        <div class="team-info">
+            <h1 class="center">Team Name</h1>
+            <ul class="team-members">
+                <li>Member 1</li>
+                <li>Member 2</li>
+                <li>Member 3</li>
+                <li>Member 4</li>
+            </ul>
+        </div>
+        <br><br><br>
+        <div class="code-editor">
+            
+            <div class="editor-header">
+                <h2 class="center">Team Script</h2>
+                <br><br>
+                <div class="editor-container center">
+                    <textarea id="code-editor" style="width:500px; height: 300px;"></textarea>
+                </div>
+                <div class="editor-controls center">
+                    <button id="run-script">Run</button>
+                    <button id="save-script">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; CodeWars Live Testing Portal</p>
+    </footer>
+{% endblock content %}

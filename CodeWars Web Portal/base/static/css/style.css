@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: url('ITC.jpg');
+background-attachment: fixed; 
+background-size: 100% 100%;
+}
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+  }
+.outer-wrap{
+min-height: 100%;
+ border-radius: 50px;
+ padding: 25px;
+ background-color:#97DCE9;
+ 
+}
+.inner-wrap{
+ background-color: white;
+ padding: 70px;
+ border-radius: 45px;
+}
+.inner-wrap form *{
+ display: block;
+ width: 100%;
+}
+.inner-wrap form label{
+margin-bottom: 5px;
+font-size: 14px;
+font-weight: bold;
+line-height: 26px; 
+}
+.inner-wrap form input{
+padding: 12px 20px;
+border-radius: 5px;
+border: 1px solid black;
+background: white; 
+color: black; 
+}
+.center{
+    text-align: center;
+}
+.inner-wrap button{
+ border-radius: 5px;
+background: black;
+color: white;
+cursor: pointer;
+text-align: center;
+font-size: 16px;
+padding: 12px 68px;
+font-weight: bold;
+border: 1px solid transparent;
+margin-top: 30px;
+line-height: 26px; 
+}
+.signup-link{
+ color: black;
+ font-size: 15px;
+ margin-top: 20px;
+ text-align: center;
+ line-height: 25px;
+ display: block;
+ text-decoration:none;
+}
+.signup-link:hover{
+ text-decoration-line: underline;
+ font-weight: bold;
+}
+.inner-wrap button:hover{
+ background-color: white;
+ color: black;
+ border-color: black;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width:100%;
+}
+.navbar a{
+    text-decoration: none;
+    background-color: black;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    background: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    line-height: 26px; 
+    width:100%;
+}
+#code-editor{
+    border:1px solid black;
+    border-radius: 5px;
+    resize:none;
+}
+.navbar a:hover{
+    background-color: white;
+ color: black;
+ border-color: black;
+}
+.navbar li{
+    float: left;
+    width:50%;
+}
+footer{
+    padding-top: 10%;
+}
+.form-wrap{
+    border: 3px;
+}
